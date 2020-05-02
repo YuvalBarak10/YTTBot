@@ -817,7 +817,7 @@ class ScdlBot:
                                                duration=duration,
                                                performer=performer,
                                                title=title,
-                                               artist="gg",
+                                               artist='gg',
                                                caption=caption_full,
                                                parse_mode='Markdown')
                     sent_audio_ids.append(audio_msg.audio.file_id)
