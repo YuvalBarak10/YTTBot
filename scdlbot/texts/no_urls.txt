@@ -1,4 +1,4 @@
-*Sorry*, no supported links found in your request.
-Or, if it was YouTube link, YouTube just didn't let me download from it too repeatedly..
-Just wait and try again later, or try my test version bot: @scdltestbot or some another bot like @utubebot.
-For more information see /help
+*סליחה*, לא נמצאו קישורים נתמכים בבקשתך.
+לחלופין, אם זה היה קישור ל- YouTube, YouTube פשוט לא הרשה לי להוריד ממנו..
+רק המתן ונסה שוב מאוחר יותר
+למידע נוסף ראה /help

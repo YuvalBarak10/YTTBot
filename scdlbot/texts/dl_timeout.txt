@@ -1,1 +1,2 @@
-*Sorry*, your download was taking too much time (more than {} minutes), so I needed to stop it. You can get direct links and download for yourself with a `/link <links>` command.
+*סליחה*, ההורדה שלך ארכה יותר מדי זמן (יותר מ- {} דקות), ולכן הייתי צריך להפסיק את זה.
+אתה יכול לקבל קישורים ישירים ולהוריד בעצמך באמצעות פקודה `/link <קישורים>.
