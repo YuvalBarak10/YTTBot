@@ -127,8 +127,8 @@ class ScdlBot:
         dispatcher.add_error_handler(self.error_callback)
 
         self.bot_username = self.updater.bot.get_me().username
-        self.RANT_TEXT_PRIVATE = "קרא /help ללמוד כיצד להשתמש בי"
-        self.RANT_TEXT_PUBLIC = "[Start me in Private chat to read help and learn how to use me](t.me/{}?start=1)".format(
+        self.RANT_TEXT_PRIVATE = "Read /help to learn how to use me"
+        self.RANT_TEXT_PUBLIC = "[Start me in PM to read help and learn how to use me](t.me/{}?start=1)".format(
             self.bot_username)
 
     def start(self, use_webhook=False, webhook_host="127.0.0.1", webhook_port=None, cert_file=None, cert_key_file=None,
@@ -287,7 +287,7 @@ class ScdlBot:
                 mode = "dl"
         if command_passed and not context.args:
             rant_text = self.RANT_TEXT_PRIVATE if chat_type == Chat.PRIVATE else self.RANT_TEXT_PUBLIC
-            rant_text += "\nאתה יכול פשוט לשלוח הודעה עם קישורים (להורדה) או פקודה כ- `/{} <links>`.".format(
+            rant_text += "\nYou can simply send message with links (to download) OR command as `/{} <links>`.".format(
                 mode)
             self.rant_and_cleanup(context.bot, chat_id, rant_text, reply_to_message_id=reply_to_message_id)
             return
@@ -338,7 +338,7 @@ class ScdlBot:
                                                                     "source_ip": source_ip, "proxy": proxy}
                     question = "🎶 links found, what to do?"
                     button_dl = InlineKeyboardButton(text="✅ הורד", callback_data=" ".join([orig_msg_id, "dl"]))
-                    button_link = InlineKeyboardButton(text="❇️ קישור להורדה",
+                    button_link = InlineKeyboardButton(text="❇️ לינק הורדה",
                                                        callback_data=" ".join([orig_msg_id, "link"]))
                     button_cancel = InlineKeyboardButton(text="❎", callback_data=" ".join([orig_msg_id, "nodl"]))
                     inline_keyboard = InlineKeyboardMarkup([[button_dl, button_link, button_cancel]])
