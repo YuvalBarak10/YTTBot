@@ -568,7 +568,7 @@ class ScdlBot:
                     {
                         'key': 'FFmpegExtractAudio',
                         'preferredcodec': 'mp3',
-                        'preferredquality': '128',
+                        'preferredquality': '320',
                     },
                     # {'key': 'EmbedThumbnail',}, {'key': 'FFmpegMetadata',},
                 ],
@@ -722,7 +722,7 @@ class ScdlBot:
             try:
                 file_converted = file.replace(file_ext, ".mp3")
                 ffinput = ffmpeg.input(file)
-                ffmpeg.output(ffinput, file_converted, audio_bitrate="128k", vn=None).run()
+                ffmpeg.output(ffinput, file_converted, audio_bitrate="320k", vn=None).run()
                 file = file_converted
                 file_root, file_ext = os.path.splitext(file)
                 file_format = file_ext.replace(".", "").lower()
