@@ -17,9 +17,9 @@ _שלח או העבר_ הודעת טקסט הכוללת קישורים תומכ�
 *Mixcloud, Vimeo ו-* שירים / סרטונים / אלבומים / וכו
 
 *הודעה לדוגמא:*
-https://m.soundcloud.com/***/*****
-וגם https://***.bandcamp.com/track/**** 
-ו- youtu.be/****
+https://m.soundcloud.com/ /
+וגם https://***.bandcamp.com/track/ 
+ו- youtu.be/
 
 *מפתח הבוט:*
 @rap_ap
